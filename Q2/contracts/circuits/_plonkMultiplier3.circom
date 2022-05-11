@@ -3,6 +3,7 @@ pragma circom 2.0.0;
 // [assignment] Modify the circuit below to perform a multiplication of three signals
 
 /*This circuit template checks that c is the multiplication of a and b.*/  
+
  template Multiplier3 () {
 
    signal input a;  
