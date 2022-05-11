@@ -131,9 +131,6 @@ describe("Multiplier3 with PLONK", function () {
 
         const argv = calldata.replace(/["[\]\s]/g, "").split(',');
 
-
-//    function verifyProof(bytes memory proof, uint[] memory pubSignals) public view returns (bool) {
-
         expect(await verifier.verifyProof(argv[0], [argv[1]])).to.be.true;
     });
     

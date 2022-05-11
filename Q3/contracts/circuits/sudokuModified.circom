@@ -40,9 +40,10 @@ template sudoku() {
     component mul = matElemMul(9,9);
     
     //[assignment] hint: you will need to initialize your RangeProof components here
-    
-component rangeproofs[9][9][2];
+    // create array for range proofs
 
+component rangeproofs[9][9][2];
+//for each field check if it is in 0-9 range
     for (var i=0; i<9; i++) {
         for (var j=0; j<9; j++) {
            rangeproofs[i][j][0]=RangeProof(252);
